@@ -1,50 +1,73 @@
-# Welcome to your Expo app 👋
+# Movie Search App 🎬
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native mobile app for searching movies using the OMDb API. Users can search movies by title, view details, ratings, and plot information.
 
-## Get started
+## Features ✨
+- Search movies by title
+- Display movie posters in list view
+- View detailed movie information
+- Responsive design for iOS and Android
+- Clean navigation between screens
 
-1. Install dependencies
+## Prerequisites 📋
+- Node.js (v14+)
+- npm/yarn
+- Android Studio (for Android) or Xcode (for iOS)
+- OMDb API key (free from [omdbapi.com](http://www.omdbapi.com/apikey.aspx))
 
-   ```bash
-   npm install
-   ```
+## Installation & Setup 🛠️
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Clone the repository
 ```bash
-npm run reset-project
-```
+git clone https://github.com/yourusername/movie-search-app.git
+cd movie-search-app
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+#FOLDER STRUCTURE 
+movie-search-app/
+├─ android/               # Android native code
+├─ ios/                   # iOS native code
+├─ src/
+│  ├─ components/         # Reusable components
+│  │  ├─ SearchBar.js
+│  │  └─ MovieCard.js
+│  ├─ screens/            # Application screens
+│  │  ├─ HomeScreen.js
+│  │  └─ MovieDetailScreen.js
+│  ├─ services/           # API services
+│  │  └─ api.js
+│  ├─ navigation/         # Navigation setup
+│  │  └─ AppNavigator.js
+│  └─ config.js           # API configuration
+├─ App.js                 # Root component
+└─ package.json           # Project dependencies
 
-## Join the community
 
-Join our community of developers creating universal apps.
+#Usage Guide 📱
+#Search Movies
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Enter at least 3 characters in the search bar
+
+View results in list format with posters
+
+View Movie Details
+
+Tap any movie from the list
+
+See detailed information including:
+
+Movie poster
+
+Title and release year
+
+Genre
+
+IMDb rating
+
+Plot summary
+
+Return to Search
+
+Press back button/gesture to return to search results
