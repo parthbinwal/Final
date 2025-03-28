@@ -32,12 +32,12 @@ movie-search-app/
 ├─ src/
 │  ├─ components/         # Reusable components
 │  │  ├─ SearchBar.js
-│  │  └─ MovieCard.js
+│  │  
 │  ├─ screens/            # Application screens
 │  │  ├─ HomeScreen.js
 │  │  └─ MovieDetailScreen.js
-│  ├─ services/           # API services
-│  │  └─ api.js
+│  |
+│  |
 │  ├─ navigation/         # Navigation setup
 │  │  └─ AppNavigator.js
 │  └─ config.js           # API configuration
